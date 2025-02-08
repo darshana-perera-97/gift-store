@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
 
 export default function Design() {
   return (
-    <div>Design</div>
-  )
+    <div>
+      <Routes>
+        <Route path="/about" element={<Home />} />
+      </Routes>
+    </div>
+  );
 }
